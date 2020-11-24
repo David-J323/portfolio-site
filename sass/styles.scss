@@ -2,211 +2,498 @@
 
 $primary-color: #472F81;
 $secondary-color: #E9C839;
+$font: "Oxygen", sans-serif;
 
-header {
-    text-align: center;
-    font-family: "Oxygen", sans-serif;
-    font-weight: 400;
+nav {
+    background-color: white;
+}
+
+nav li {
     color: $primary-color;
-    height: 100vh;
+    font-family: $font;
+    font-weight: 700;
+    padding: 15px;
+    text-align: center;
 }
 
 nav img {
-    float: left;
-    width: 24px;
-    height: 31px;
-}
-
-nav a {
-    float: right;
+    width: 10%;
+    height: 10%;
     color: $primary-color;
 }
 
-.topHomeBlock {
-    position: absolute;
-    background-color: $primary-color;
-    width: 100%;
-    height: 16px;
-    bottom: -8px;
+header {
+    color: $primary-color;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.leftHomeBlock {
-    position: absolute;
-    background-color: $primary-color;
-    width: 16px;
-    height: 40vh;
-    top: 8vh;
-}
-
-.rightHomeBlock {
-    position: absolute;
-    background-color: $secondary-color;
-    width: 16px;
-    height: 30vh;
-    bottom: 5vh;
-    left: 78px;
-}
-
-.bottomHomeBlock {
-    position: absolute;
-    background-color: $secondary-color;
-    width: 100%;
-    height: 16px;
-    top: 230px;
-}
-
-#leftText {
-    position: absolute;
-    top: 100px;
-    height: 25vh;
-    left: 50px;
-    writing-mode: vertical-rl;
-}
-
-#rightText {
-    position: absolute;
-    bottom: 150px;
-    height: 15vh;
-    right: 39px;
-    writing-mode: vertical-lr;
-}
-
-#bottomHomeText {
-    position: absolute;
-    top: 200px;
-    right: 1vw;
-    width: 100%;   
-}
-
-img {
+header img {
+    position: relative;
     width: 100%;
     height: 100%;
 }
 
-nav {
-    padding-top: 5%;
-    width: 100%;
+h1, h2 {
+    font-family: $font;
+    font-weight: 700;
 }
 
-.hero {
-    padding-top: 22%;
-    padding-bottom: 22%;
-    width: 100%;
-    height: 88vh;
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 6%;
+    text-align: center;
 }
 
-.hero h1 {
+header h2 {
+    font-family: $font;
+    font-size: 18px;
+    text-align: center;
+}
+
+#work, #about, #contact {
+    position: relative;
+    margin-bottom: 140px;
+}
+
+#work img {
+    width: 100%;
+    height: 100%;
+}
+
+#work p, #work h1, #work h2 {
+    font-family: $font;
+    color: $primary-color;
+}
+
+#work h1 {
+    position: relative;
+    color: $secondary-color;
     font-size: 2.5em;
     font-weight: 700;
-    padding-top: 5%;
+    bottom: 18px;
 }
 
-#workOdd, #workEven {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 400;
-    color: $primary-color;
-    padding-top: 15%;
-    width: 100%;
-    height: 100vh;
-}
-
-article h1, article h2 {
-    font-size: 4em;
-    font-weight: 700;
-}
-
-article h2 {
-   font-size: 2.5em;
-   padding-top: 13%; 
-}
-
-article p {
-    position: absolute;
-    padding-top: 4%;
-    bottom: 163px;
-    left: 100px;
-}
-
-footer  {
-    padding-top: 25%;
-}
-
-.rule {
+#work h2 {
     position: relative;
-    background-color: $secondary-color;
-    padding-top: 16px;
-    width: 100%;
-    right: 20%;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-bottom: 10px;
+    top: 10px;
 }
 
-button {
+.workTopBlock {
+    background-color: $secondary-color;
+    width: 100%;
+    height: 10px;
+}
+
+.even .workTopBlock {
+    background-color: $primary-color;
+}
+
+#work button {
     position: relative;
     background-color: $primary-color;
     color: white;
     border: none;
+    font-family: $font;
+    font-size: 1em;
     font-weight: 700;
-    padding: 2%;
-    top: 25px;
+    padding: 10px;
+    width: 100%;
+    top: 20px;
 }
 
-.topWorkBlock {
-    position: absolute;
+#about {
+    background-color: $secondary-color;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#about h1 {
+    position: relative;
+    color: $primary-color;
+    font-size: 2em;
+    font-weight: 700;
+    bottom: 18px;
+}
+
+#about h2 {
+    position: relative;
+    color: $primary-color;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-top: 60px;
+}
+
+#about p {
+    position: relative;
+    color: $primary-color;
+}
+
+.aboutTopBlock, .aboutBottomBlock {
     background-color: $primary-color;
     width: 100%;
-    height: 16px;
-    bottom: 170px;
+    height: 10px;
 }
 
-.rightWorkBlock {
-    position: absolute;
-    background-color: $secondary-color;
-    width: 16px;
-    height: 80px;
-    bottom: 40px;
-    left: 172px;
+#contact h1 {
+    position: relative;
+    color: $primary-color;
+    font-size: 2em;
+    font-weight: 700;
+    bottom: 18px;
 }
 
-.leftWorkBlock {
-    position: absolute;
+#contact input {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+}
+
+#contact label {
+    padding-top: 20px;
+}
+
+#contact legend {
+    padding-top: 40px;
+}
+
+#contact textarea {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#contact #submitButton {
     background-color: $primary-color;
-    width: 16px;
-    height: 100px;
-    bottom: -130px;
+    color: white;
+    border: none;
+    font-family: $font;
+    font-size: 1em;
+    font-weight: 700;
 }
 
-.bottomWorkBlock {
-    position: absolute;
+.end {
+    background-color: $primary-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.end p {
+    color: white;
+    font-family: $font;
+    font-weight: 400;
+    padding-top: 14px;
+}
+
+.end .footerBlock {
+    position: relative;
     background-color: $secondary-color;
     width: 100%;
-    height: 16px;
-    top: 130px;
+    height: 10px;
+    top: 4px;
 }
 
-#workEven h1, #workEven h2, #workEven aside, #workEven footer {
-    text-align: right;
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+    /*
+    header {
+        text-align: center;
+        font-family: "Oxygen", sans-serif;
+        font-weight: 400;
+        color: $primary-color;
+        height: 1440px;
+    }
+    
+    nav img {
+        float: left;
+        width: 24px;
+        height: 31px;
+    }
+    
+    nav a {
+        float: right;
+        color: $primary-color;
+    }
+    
+    .topHomeBlock {
+        position: absolute;
+        background-color: $primary-color;
+        width: 100%;
+        height: 16px;
+        bottom: -8px;
+    }
+    
+    .leftHomeBlock {
+        position: absolute;
+        background-color: $primary-color;
+        width: 16px;
+        height: 40vh;
+        top: 8vh;
+    }
+    
+    .rightHomeBlock {
+        position: absolute;
+        background-color: $secondary-color;
+        width: 16px;
+        height: 30vh;
+        bottom: 5vh;
+        left: 6vw;
+    }
+    
+    .bottomHomeBlock {
+        position: absolute;
+        background-color: $secondary-color;
+        width: 100%;
+        height: 16px;
+        top: 230px;
+    }
+    
+    #leftText {
+        position: absolute;
+        top: 100px;
+        height: 25vh;
+        left: 50px;
+        writing-mode: vertical-rl;
+    }
+    
+    #rightText {
+        position: absolute;
+        bottom: 150px;
+        height: 15vh;
+        right: 39px;
+        writing-mode: vertical-lr;
+    }
+    
+    #bottomHomeText {
+        position: absolute;
+        top: 200px;
+        right: 1vw;
+        width: 100%;   
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    nav {
+        padding-top: 5%;
+        width: 100%;
+    }
+    
+    .hero {
+        padding-top: 22%;
+        padding-bottom: 22%;
+        width: 100%;
+        height: 88vh;
+    }
+    
+    .hero h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        padding-top: 5%;
+    }
+    
+    #workOdd, #workEven, .about {
+        position: relative;
+        font-family: "Oxygen", sans-serif;
+        font-weight: 400;
+        color: $primary-color;
+        padding-top: 15%;
+        width: 100%;
+        height: 1440px;
+    }
+    
+    article h1, article h2 {
+        font-size: 4em;
+        font-weight: 700;
+    }
+    
+    article h2 {
+       font-size: 2.5em;
+       padding-top: 13%; 
+    }
+    
+    article p {
+        position: absolute;
+        padding-top: 4%;
+        bottom: 163px;
+        left: 100px;
+    }
+    
+    footer  {
+        padding-top: 25%;
+    }
+    
+    .rule {
+        position: relative;
+        background-color: $secondary-color;
+        padding-top: 16px;
+        width: 100%;
+        right: 20%;
+    }
+    
+    button {
+        position: relative;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        font-weight: 700;
+        padding: 2%;
+        top: 25px;
+    }
+    
+    .topWorkBlock {
+        position: absolute;
+        background-color: $primary-color;
+        width: 100%;
+        height: 16px;
+        bottom: 170px;
+    }
+    
+    .rightWorkBlock {
+        position: absolute;
+        background-color: $secondary-color;
+        width: 16px;
+        height: 80px;
+        bottom: 40px;
+        left: 172px;
+    }
+    
+    .leftWorkBlock {
+        position: absolute;
+        background-color: $primary-color;
+        width: 16px;
+        height: 100px;
+        bottom: -130px;
+    }
+    
+    .bottomWorkBlock {
+        position: absolute;
+        background-color: $secondary-color;
+        width: 100%;
+        height: 16px;
+        top: 130px;
+    }
+    
+    #workEven h1, #workEven h2, #workEven aside, #workEven footer {
+        text-align: right;
+    }
+    
+    #workEven .rule {
+        left: 100%;
+    }
+    
+    #workEven p {
+        left: 320px;
+    }
+    
+    #workEven button {
+        float: right;
+    }
+    
+    #workEven .rightWorkBlock {
+        background-color: $primary-color;
+        left: 0px;
+    }
+    
+    #workEven .leftWorkBlock {
+        background-color: $secondary-color;
+        left: 65px;
+    }
+    
+    .about {
+        background-color: $secondary-color;
+    }
+    
+    .about h1, .about h2, .about p {
+        text-align: center;
+    }
+    
+    .about h1 {
+        position: relative;
+        font-size: 4rem;
+        font-weight: 700;
+        padding-bottom: 6%;
+        bottom: 15px;
+    }
+    
+    .about h2 {
+        position: relative;
+        font-weight: 700;
+        padding-top: 18%;
+        padding-bottom: 2%;
+    }
+    
+    .aboutTopBlock, .aboutLeftBlock, .aboutRightBlock, .aboutBottomBlock {
+        position: absolute;
+        background-color: $primary-color;
+    }
+    
+    .aboutTopBlock {
+        width: 100%;
+        height: 16px;
+        bottom: 180px;
+    }
+    
+    .aboutLeftBlock {
+        width: 16px;
+        height: 180px;
+        top: 20px;
+    }
+    
+    .aboutRightBlock {
+        width: 16px;
+        height: 260px;
+        top: 200px;
+    }
+    
+    .aboutBottomBlock {
+        width: 100%;
+        height: 16px;
+        top: 110px;
+    }
+    
+    #aboutTopText, #aboutLeftText, #aboutRightText, #aboutBottomText {
+        position: absolute;
+    }
+    
+    #aboutTopText {
+        width: 100%;
+        bottom: 150px;
+    }
+    
+    #aboutLeftText {
+        writing-mode: vertical-rl;
+        height: 200px;
+        left: 50px;
+        top: 50px;
+    }
+    
+    #aboutRightText {
+        writing-mode: vertical-lr;
+        height: 300px;
+        right: 100px;
+        top: 300px;
+    }
+    
+    #aboutBottomText {
+        top: 85px;
+        left: 30px;
+    }
+    */
 }
 
-#workEven .rule {
-    left: 100%;
-}
-
-#workEven p {
-    left: 320px;
-}
-
-#workEven button {
-    float: right;
-}
-
-#workEven .rightWorkBlock {
-    background-color: $primary-color;
-    left: 0px;
-}
-
-#workEven .leftWorkBlock {
-    background-color: $secondary-color;
-    left: 65px;
-}
 
 
 

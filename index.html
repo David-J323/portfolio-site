@@ -11,198 +11,199 @@
         <title>David Jaramillo</title>
     </head>
     <body>
-        <header>
+        <nav class="navbar navbar-expand-md navbar-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-2020-small.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="hero">
             <div class="container">
                 <div class="row">
-                    <nav>
-                        <div class="row">
-                            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                                <img src="img/logo-2020.png" alt="logo" />
-                            </div>
-                            <div class="col-sm-1 col-md-1 col-lg-2 offset-lg-3 col-xl-2 offset-xl-3">
-                                <hr class="topHomeBlock" />
-                            </div>
-                            <div class="col-lg-1 offset-lg-3 col-xl-1 offset-xl-3 ">
-                                <a href="#work">Work</a>
-                            </div>
-                            <div class="col-1">
-                                <a href="#about">About</a>
-                            </div>
-                            <div class="col-1">
-                                <a href="#contact">Contact</a>
-                            </div>
-                        </div>
-                    </nav>
-                    <section class="hero">
-                        <div class="row">
-                            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                                <hr class="leftHomeBlock" />
-                                <aside id="leftText">Brand Identity & Strategy</aside>
-                            </div>
-                            <div class="col-sm-12 col-md-5 col-lg-2 offset-lg-4 col-xl-2 offset-xl-4">
-                                <img src="img/logo-2020.png" alt="logo-large" />
-                            </div>
-                            <div class="col-sm-1 col-md-1 col-lg-1 offset-lg-4 col-xl-1 offset-xl-4">
-                                <hr class="rightHomeBlock" />
-                                <aside id="rightText">Web Design</aside>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-4 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4">
-                                <h1>David Jaramillo</h1>
-                                <caption>Graphic Designer | Web Developer</caption>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-1 col-md-1 col-lg-3 offset-lg-6 col-xl-3 offset-xl-6">
-                                <hr class="bottomHomeBlock" />
-                                <aside id="bottomHomeText">Full Stack Development</aside>
-                            </div>
-                        </div>
-                    </section>
+                    <div class="col-4 offset-4 col-sm-4 col-md-12 col-lg-2 offset-lg-5 col-xl-2 offset-xl-5">
+                        <img src="img/logo-2020.png" alt="logo-big">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-md-12 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4">
+                        <h1>David Jaramillo</h1>
+                        <h2>Graphic Designer | Web Developer</h2>
+                    </div>
                 </div>
             </div>
         </header>
-        <main id="workOdd">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 offset-lg-2 col-xl-4 offset-xl-2">
-                        <hr class="topWorkBlock" />
+        <main id="work">
+            <section class="odd">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 offset-1 col-md-6 offset-md-0 col-lg-6 offset-lg-0 col-xl-6 offset-xl-0">
+                            <p>Projects</p>
+                            <h1>1 | 3</h1>
+                            <h2>Metamorphics</h2>
+                            <p>Personal Project | Solo</p>
+                        </div>
+                        <div class="col-2">
+                            <hr class="workTopBlock" />
+                        </div>
+                        <div class="col-10 offset-1 col-md-6 offset-md-6 col-lg-6 offset-lg-6 col-xl-6 offset-xl-6">
+                            <a href="metamorphics.html"><img src="img/metamorphics-cards.jpg" alt="cards"></a>
+                        </div>
+                        <div class="col-10 offset-1 col-md-4 offset-md-0 col-lg-2 offset-lg-0 col-2 offset-xl-0">
+                            <a href="metamorphics.html"><button>Explore Project</button></a>
+                        </div>
                     </div>
-                    <div class="col-lg-1 offset-lg-4 col-xl-1 offset-xl-4">
-                        <hr class="rightWorkBlock" />
-                    </div>
-                    <article>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                <aside>Projects</aside>
-                                <h1>1 | 3</h1>
-                                <h2>Metamorphics</h2>
-                                <div class="col-sm-4 col-md-4 col-lg-2 col-xl-2">
-                                    <hr class="rule"/>
-                                </div>
-                                <p>Personal Project | Solo</p>
-                                <a href="metamorphics.html"><button class="exploreProject">Explore Project</button></a>
-                            </div>
-                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                <a href="metamorphics.html"><img src="img/metamorphics-cards.jpg" alt="cards" /></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-1 col-xl-1">
-                                <hr class="leftWorkBlock" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                <footer>Deck of Playing Cards</footer>
-                            </div>
-                            <div class="col-lg-3 offset-lg-1 col-xl-3 offset-xl-1">
-                                <hr class="bottomWorkBlock" />
-                            </div>
-                        </div>
-                    </article>
                 </div>
-            </div>
+            </section>
         </main>
-        <main id="workEven">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-1 col-xl-1">
-                        <hr class="rightWorkBlock" />
+        <main id="work">
+            <section class="even">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 offset-1 col-md-6 offset-md-0 col-lg-6 offset-lg-0 col-xl-6 offset-xl-0">
+                            <p>Projects</p>
+                            <h1>2 | 3</h1>
+                            <h2>Greenwich Village Chelsea Chamber of Commerce</h2>
+                            <p>Digital Design | Jr. GD</p>
+                        </div>
+                        <div class="col-2">
+                            <hr class="workTopBlock" />
+                        </div>
+                        <div class="col-10 offset-1 col-md-6 offset-md-6 col-lg-6 offset-lg-6 col-xl-6 offset-xl-6">
+                            <a href="metamorphics.html"><img src="img/metamorphics-cards.jpg" alt="cards"></a>
+                        </div>
+                        <div class="col-10 offset-1 col-md-4 offset-md-0 col-lg-2 offset-lg-0 col-2 offset-xl-0">
+                            <a href="metamorphics.html"><button>Explore Project</button></a>
+                        </div>
                     </div>
-                    <div class="col-lg-4 offset-lg-4 col-xl-4 offset-xl-4">
-                        <hr class="topWorkBlock" />
-                    </div>
-                    <article>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                <a href="legacySports.html"><img src="img/metamorphics-cards.jpg" alt="cards" /></a>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                <aside>Projects</aside>
-                                <h1>2 | 3</h1>
-                                <h2>Metamorphics</h2>
-                                <div class="col-sm-4 col-md-4 col-lg-2 offset-lg-9 col-xl-2 offset-xl-9">
-                                    <hr class="rule"/>
-                                </div>
-                                <p>Personal Project | Solo</p>
-                                <a href="metamorphics.html"><button class="exploreProject">Explore Project</button></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-1 offset-lg-11 col-xl-1 offset-xl-11">
-                                <hr class="leftWorkBlock" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-3 offset-lg-5 col-xl-3 offset-xl-5">
-                                <hr class="bottomWorkBlock" />
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-6 offset-lg-6 col-xl-6 offset-xl-6">
-                                <footer>David Jaramillo</footer>
-                            </div>
-                        </div>
-                    </article>
                 </div>
-            </div>
+            </section>
         </main>
-        <main id="workOdd">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 offset-lg-2 col-xl-4 offset-xl-2">
-                        <hr class="topWorkBlock" />
+        <main id="work">
+            <section class="odd">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 offset-1 col-md-6 offset-md-0 col-lg-6 offset-lg-0 col-xl-6 offset-xl-0">
+                            <p>Projects</p>
+                            <h1>3 | 3</h1>
+                            <h2>Ashya NY</h2>
+                            <p>Graphic Design | Jr. GD</p>
+                        </div>
+                        <div class="col-2">
+                            <hr class="workTopBlock" />
+                        </div>
+                        <div class="col-10 offset-1 col-md-6 offset-md-6 col-lg-6 offset-lg-6 col-xl-6 offset-xl-6">
+                            <a href="metamorphics.html"><img src="img/metamorphics-cards.jpg" alt="cards"></a>
+                        </div>
+                        <div class="col-10 offset-1 col-md-4 offset-md-0 col-lg-2 offset-lg-0 col-2 offset-xl-0">
+                            <a href="metamorphics.html"><button>Explore Project</button></a>
+                        </div>
                     </div>
-                    <div class="col-lg-1 offset-lg-4 col-xl-1 offset-xl-4">
-                        <hr class="rightWorkBlock" />
-                    </div>
-                    <article>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                <aside>Projects</aside>
-                                <h1>3 | 3</h1>
-                                <h2>Metamorphics</h2>
-                                <div class="col-sm-4 col-md-4 col-lg-2 col-xl-2">
-                                    <hr class="rule"/>
-                                </div>
-                                <p>Personal Project | Solo</p>
-                                <a href="metamorphics.html"><button class="exploreProject">Explore Project</button></a>
-                            </div>
-                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                <a href="metamorphics.html"><img src="img/metamorphics-cards.jpg" alt="cards" /></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-1 col-xl-1">
-                                <hr class="leftWorkBlock" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                <footer>David Jaramillo</footer>
-                            </div>
-                            <div class="col-lg-3 offset-lg-1 col-xl-3 offset-xl-1">
-                                <hr class="bottomWorkBlock" />
-                            </div>
-                        </div>
-                    </article>
                 </div>
-            </div>
+            </section>
         </main>
-        <section class="about">
+        <section id="about">
             <div class="container">
                 <div class="row">
-                    
+                    <div class="col-4 offset-1 col-md-3 offset-md-2 col-lg-3 offset-lg-2 col-xl-3 offset-xl-2">
+                        <hr class="aboutTopBlock" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
+                        <p>Nice to meet you, I'm </p>
+                        <h1>David Jaramillo</h1>
+                        <p>
+                            A NY-based designer, currently residing in Queens. 
+                            I’ve worked with teams in the non-profit, fashion, 
+                            and entertainment industry. Got any exciting projects you 
+                            need a hand in? Feel free to get in touch with me.
+                        </p>
+                        <h2>Companies :</h2>
+                        <p>
+                            Greenwich Village Chelsea Chamber of Commerce | Legacy Sports
+                            Aysha NY | Emporia Studios | A Free Bird
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 offset-6 col-md-2 offset-md-4 col-lg-2 offset-lg-4 col-xl-2 offset-xl-4">
+                        <hr class="aboutBottomBlock" />
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact">
             <div class="container">
                 <div class="row">
-
+                    <div class="col-10 offset-1 col-md-6 col-lg-6 col-xl-6">
+                        <p>Got a Project?</p>
+                        <h1>Drop me a Message!</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-4 offset-md-0 col-lg-4 offset-lg-0 col-xl-4 offset-xl-0">
+                        <form>
+                            <fieldset>
+                                <label>Full Name :</label>
+                                <br />
+                                <input type="text" value="" name="firstLastName" required="required" />
+                                <label>Email :</label>
+                                <br />
+                                <input type="email" value="" name="emailAddress" required="required" />
+                                <label>Phone # :</label>
+                                <br />
+                                <input type="tel" value="" name="telephone" required="required" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Optional</legend>
+                                <label>Company :</label>
+                                <br />
+                                <input type="text" value="" name="company" />
+                                <label>Website :</label>
+                                <br />
+                                <input type="url" value="" name="website" />
+                            </fieldset>
+                            <fieldset>
+                                <label>Message :</label>
+                                <br />
+                                <textarea></textarea>
+                            </fieldset>
+                            <br />
+                            <input id="submitButton" type="submit" value="Send Message" /> 
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
+        <footer class="end">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 offset-1 col-md-4 offset-md-0 col-lg-4 offset-lg-0 col-xl-4 offset-xl-0">
+                        <p>David Jaramillo</p>
+                    </div>
+                    <div class="col-2 offset-2 col-md-4 offset-md-4 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4">
+                        <hr class="footerBlock" />
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
