@@ -226,18 +226,51 @@ header .heroTopBlock, header .heroRightBlock, header .heroLeftBlock, header .her
 
 /*  Work Showcase Pages  */  
 
+
 .heroImg {
     position: relative;
     padding-top: 0px;
     padding-bottom: 50px;
 }
 
-.heroImg h1 {
+.heroImg .jumbotron {
     position: relative;
-   
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.showcase h2, .showcase p, .credits h3, .credits p, .nextProject a, .nextProject h3 {
+.metamorphics .jumbotron {
+    background-image: url(../img/metamorphics-cards.jpg);
+}
+
+.gvccc .jumbotron {
+    background-image: url(../img/gvcoc-hero@2x-1-min.png);
+}
+
+.aysha .jumbotron {
+    background-image: url(../img/asyha-hero.png);
+}
+
+.heroImg .jumbotron::after {
+    content: '';
+    position: absolute;
+    background-color: rgba($color: $primary-color, $alpha: 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.heroImg h1 {
+    position: relative;
+    color: $secondary-color;
+    z-index: 2;
+}
+
+.showcase h2, .showcase dt, .showcase p, .credits h3, .credits p, .nextProject a, .nextProject h3 {
     font-family: $font;
     color: $primary-color;
 }
@@ -246,8 +279,13 @@ header .heroTopBlock, header .heroRightBlock, header .heroLeftBlock, header .her
     font-weight: 700;
 }
 
-.showcase p {
+.showcase p, .showcase dt {
     margin-bottom: 50px;
+}
+
+.showcase dt, .credits dt {
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .showcaseTopBlock, .showcaseBottomBlock {
@@ -263,7 +301,7 @@ header .heroTopBlock, header .heroRightBlock, header .heroLeftBlock, header .her
 
 .showcaseBottomBlock {
     background-color: $primary-color;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .showcase img {
@@ -274,6 +312,10 @@ header .heroTopBlock, header .heroRightBlock, header .heroLeftBlock, header .her
 
 .credits {
     margin-top: 30px;
+}
+
+.nextProject {
+    margin-bottom: 20px;
 }
 
 .nextProject .projectBlock {
@@ -475,6 +517,39 @@ header .heroTopBlock, header .heroRightBlock, header .heroLeftBlock, header .her
 
     #contact textarea {
         padding-bottom: 185px;
+    }
+
+    /* Showcase Css */
+
+    .heroImg .jumbotron {
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+    
+    .heroImg h1 {
+        font-size: 4em;
+    }
+
+    .showcase p {
+        font-size: 1.5em;
+    }
+
+    .showcaseTopBlock {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .showcaseBottomBlock {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .credits {
+        margin-bottom: 50px;
+    }
+
+    .nextProject {
+        margin-bottom: 50px;
     }
 }
 
